@@ -11,6 +11,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: my.openetc.ca
+        ftp-server: sftp://my.openetc.ca
         ftp-username: paulhibbitts@docsify.hibbitts.openetc.ca:222
         ftp-password: ${{ secrets.FTP_PASSWORD }}
